@@ -70,7 +70,7 @@ export function Sidebar() {
               onClick={() => isMobile && toggleSidebar()}
               className="px-0 py-2.5 min-[850px]:py-0"
             >
-              <Logo />
+              로고 넣을 자리
             </Link>
 
             {isMobile && (

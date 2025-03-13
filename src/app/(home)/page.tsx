@@ -9,6 +9,7 @@ import { ChatsCard } from "./_components/chats-card";
 import { OverviewCardsGroup } from "./_components/overview-cards";
 import { OverviewCardsSkeleton } from "./_components/overview-cards/skeleton";
 import { RegionLabels } from "./_components/region-labels";
+import image1 from '/Users/bh/Desktop/dashboard/public/images/ruby.jpeg';
 
 type PropsType = {
   searchParams: Promise<{
@@ -22,7 +23,10 @@ export default async function Home({ searchParams }: PropsType) {
 
   return (
     <>
-      <Suspense fallback={<OverviewCardsSkeleton />}>
+    <div>
+      <img src="/images/ruby.jpeg" alt="루비 이미지" width="500" height="300" />
+    </div>
+      {/* <Suspense fallback={<OverviewCardsSkeleton />}>
         <OverviewCardsGroup />
       </Suspense>
 
@@ -56,7 +60,7 @@ export default async function Home({ searchParams }: PropsType) {
         <Suspense fallback={null}>
           <ChatsCard />
         </Suspense>
-      </div>
+      </div> */}
     </>
   );
 }

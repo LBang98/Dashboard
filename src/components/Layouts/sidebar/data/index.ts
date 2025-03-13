@@ -24,6 +24,12 @@ export const NAV_DATA = [
         icon: Icons.Calendar,
         items: [],
       },
+      {
+        title: "드라이브",
+        url: "/imagefile",
+        icon: Icons.FourCircle,
+        items: [],
+      },
   //     {
   //       title: "Profile",
   //       url: "/profile",
